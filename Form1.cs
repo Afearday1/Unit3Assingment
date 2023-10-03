@@ -44,6 +44,20 @@ namespace Alex_Fearday_Unit2_IT481
                 isValid = false;
                 MessageBox.Show("You must enter username, password, server, and database values");
             }
+
+            else if(password.Length < 12)
+            {
+                isValid = false;
+                MessageBox.Show("Password Length must be 12 characters or more");
+            }
+            else
+            {
+                if(password.All(char.IsLetterOrDigit) && password.Any(ch => !char.IsLetterOrDigit(ch)))
+                {
+                    isValid = false;
+                    MessageBox.Show("You must enter alphanumric and special characters for the password");
+                }
+            }
             
             if (isValid)
             {
