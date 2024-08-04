@@ -55,7 +55,7 @@ namespace Alex_Fearday_Unit2_IT481
                 if(password.All(char.IsLetterOrDigit) && password.Any(ch => !char.IsLetterOrDigit(ch)))
                 {
                     isValid = false;
-                    MessageBox.Show("You must enter alphanumric and special characters for the password");
+                    MessageBox.Show("You must enter alphanumeric and special characters for the password");
                 }
             }
             
@@ -66,7 +66,7 @@ namespace Alex_Fearday_Unit2_IT481
                                       "Database = " + database + ";" +
                                       "User Id = " + user + ";" +
                                       "Password = " + password + ";");
-                MessageBox.Show("Connection information was sent.");
+                MessageBox.Show("You must enter alphanumeric and special characters for the password");
             }
         }
 
